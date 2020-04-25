@@ -16,13 +16,15 @@ I used StaggeredLayoutManager as a change and implemented 4 columns in landscape
 
 ## Getting Started
 
-To setup this project, just clone it first. Then obtain the API key from <a href="https://unsplash.com/documentation">here</a>! Put this key in `build.gradle` file's appropriate `API_KEY` field and run the application. That's all!
+To setup this project, just clone it first. Then obtain the API key from <a href="https://unsplash.com/documentation">here</a>. Put this key in `build.gradle` file's appropriate `API_KEY` field and run the application. That's all!
 
 ## Architecture
 
-This application used MVVM (Model-View-ViewModel) Architecture which is Google's recommended architecture for Android apps. You can read more aboute MVVM <a href="https://developer.android.com/jetpack/docs/guide#recommended-app-arch">here</a>.
+This application uses MVVM (Model-View-ViewModel) Architecture which is Google's recommended architecture for Android apps. You can read more about MVVM <a href="https://developer.android.com/jetpack/docs/guide#recommended-app-arch">here</a>.
 
 <img src="arch.png"/>
+
+For the sake of simplicity, Room database isn't implemented in this sample. If you would like to learn how to implement Room, do take a look at my other app <a href="https://github.com/sidhuparas/Coronavirus-Tracker">Coronavirus Tracker</a>.
 
 ## License
 MIT License
