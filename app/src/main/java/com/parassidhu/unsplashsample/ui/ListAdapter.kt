@@ -34,13 +34,20 @@ class ListAdapter(
         notifyItemRangeChanged(size, newSize)
     }
 
+    fun clear() {
+        list.clear()
+        notifyDataSetChanged()
+    }
+
     inner class PhotoViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
         private val image: ImageView = itemView.image
         private val rootLayout: ConstraintLayout = itemView.rootLayout
 
         fun bind(item: PhotosResponse) {
-            image.load(item.urls.imageUrl)
+            image.load(item.urls.imageUrl) {
+                crossfade(true)
+            }
 
             val set = ConstraintSet()
             set.clone(rootLayout)

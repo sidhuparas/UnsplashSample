@@ -22,6 +22,12 @@ class MainViewModel(private val repo: MainRepo): ViewModel() {
     val errorLiveData: LiveData<Boolean>
         get() = _errorLiveData
 
+    private val totalList = mutableListOf<PhotosResponse>()
+
+    init {
+        getPhotos()
+    }
+
     fun getPhotos() {
         canRequestMore = false
         viewModelScope.launch {
@@ -31,6 +37,7 @@ class MainViewModel(private val repo: MainRepo): ViewModel() {
                 is NetworkResult.Success -> {
                     val data = response.data
                     _photosResponse.value = data
+                    totalList.addAll(data)
                     currentPage++
                     canRequestMore = true
                 }
@@ -43,4 +50,10 @@ class MainViewModel(private val repo: MainRepo): ViewModel() {
     }
 
     fun canRequestMore() = canRequestMore
+
+    fun getTotalList() = totalList
+
+    fun clear() {
+        _photosResponse.value = mutableListOf()
+    }
 }

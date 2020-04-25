@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">UnsplashSample</string>
+    <string name="error_text">There\'s some network issue. Check your internet connection or API key.</string>
 
     <dimen name="toolbar_height">50dp</dimen>
 </resources>

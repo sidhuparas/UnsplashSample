@@ -15,6 +15,6 @@ abstract class BaseActivity: AppCompatActivity() {
     private fun setupBlackStatusBar() {
         val window = window
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-        window.statusBarColor = Color.WHITE
+        window.statusBarColor = Color.BLACK
     }
 }
