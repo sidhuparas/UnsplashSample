@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UnsplashSample</string>
+
+    <dimen name="toolbar_height">50dp</dimen>
+</resources>
