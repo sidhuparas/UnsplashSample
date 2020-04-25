@@ -14,7 +14,6 @@ import com.parassidhu.unsplashsample.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-
 class MainActivity : BaseActivity() {
 
     private val viewModel by viewModel<MainViewModel>()

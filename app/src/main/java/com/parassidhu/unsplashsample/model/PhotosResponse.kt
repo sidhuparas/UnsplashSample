@@ -7,7 +7,7 @@ data class PhotosResponse(
     @SerializedName("width") val width: Int,
     @SerializedName("height") val height: Int,
     @SerializedName("urls") val urls: UnsplashURL
-    )
+)
 
 data class UnsplashURL(
     @SerializedName("small") val imageUrl: String

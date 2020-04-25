@@ -2,6 +2,8 @@
 
 A sample Android application written in Kotlin to fetch images from Unsplash API with Pagination and demonstrates the use of Coil (for image loading), Koin (for injecting dependencies), Retrofit, Coroutines and MVVM
 
+### **Star :star:  this repo to show your support and it really does matter!** :clap:
+
 <img src="poster.jpeg"/>
 
 ## Inspiration
